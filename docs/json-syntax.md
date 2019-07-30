@@ -27,6 +27,7 @@ Also could be more convenient to be processed and extended.
 
 
 Alternative JavaScript version:
+
 ```js
 var type = {
   kind: "object",
@@ -95,6 +96,7 @@ This means when you see a expanded json type includes field `fields`, then this 
 an `object`, when `types`, then must be `union`.
 
 So the example above can be simplified to:
+
 ```json
 {
   "fields": {
