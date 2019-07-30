@@ -30,11 +30,11 @@ let value: any = null;
 - Simple types are not compatible
 
 ```js
-let x: number = "123"; # error!
+let x: number = "123"; // error!
 
-let y: string = 123; # error!
+let y: string = 123; // error!
 
-let z: null = true; # error!
+let z: null = true; // error!
 ```
 
 #### Rules of null
@@ -48,7 +48,7 @@ Nullable type (`T?`) is just a synonym of `union<T, null>`.
 ```js
 let t: null = null;
 
-let t2: null = 123; # error!
+let t2: null = 123; // error!
 ```
 
 - `T?`(nullable T) is same as `union<T, null>`
@@ -67,13 +67,13 @@ let t3: number? = t2;
 let x: number = 1;
 let x1: number? = x;
 
-let x2: number = x1; # error!
+let x2: number = x1; // error!
 ```
 
 - A nonnull type cannot take null as its value
 
 ```js
-let x: number = null; # error!
+let x: number = null; // error!
 ```
 
 - Nulls in unions are mergeable
@@ -132,7 +132,7 @@ let y : { a: number } = x;
 - Missing field can be treat as null value
 
 ```js
-let x : { a: number?, b: string } = { b: "1" }; # { a: null } omitted
+let x : { a: number?, b: string } = { b: "1" }; // { a: null } omitted
 
 let y : { a: number?, b: string? } = x;
 ```
