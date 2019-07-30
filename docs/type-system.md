@@ -27,6 +27,7 @@ represented as `number[]` / (or maybe `array<number>`).
 `object` is for a set of values connected with names (also called fields).
 
 All compound types can be composited freely. e.g.:
+
 ```
 type T = {
   a: number,
